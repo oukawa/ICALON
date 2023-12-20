@@ -22,8 +22,7 @@ if answer == "d":
     for i in range(loops):
         # load dataset
         df = pd.read_csv('winter_X_all_daytime_hour_LCZ.csv')
-        df = df.drop(columns=["datenum", "year", "month", "day", "hour", "minute", "second", 
-            "Talt", "RH", "RH_HOBO", "TPLT", "LOC"])
+        df = df.drop(columns=["date", "T_station", "LOC"])
         df.dropna(inplace=True)
         df.head() 
 
@@ -69,8 +68,7 @@ elif answer == "n":
     for i in range(loops):
         # load dataset
         df = pd.read_csv('winter_X_all_nighttime_hour_LCZ.csv')
-        df = df.drop(columns=["datenum", "year", "month", "day", "hour", "minute", "second", 
-            "Talt", "RH", "RH_HOBO", "TPLT", "LOC"])
+        df = df.drop(columns=["date", "T_station", "LOC"])
         df.dropna(inplace=True)
         df.head()
 

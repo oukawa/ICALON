@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 answer = input("Run for day or night? (d/n): ")
 
-variables = ["date", "T_station", "RH_HOBO", "LOC"]
+variables = ["date", "T_station", "LOC"]
 
 if answer == "d":
 # building model for daytime
